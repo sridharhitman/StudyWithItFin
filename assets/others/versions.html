@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Basic Funda</title>
+  </head>
+  <body class="bg-gray-200">
+    <nav>
+      <ul class="flex bg-white text-indigo-600 py-7 border drop-shadow-xl">
+        <li class="mx-3 cursor-pointer"><a href="../../index.html">Home</a> </li>
+        <li class="mx-3 cursor-pointer"><a href="versions.html">What's New</a></li>
+      </ul>
+    </nav>
+
+    <div class="my-10 bg-white">
+        <div>
+            <h1 class="text-violet-700 font-semibold text-2xl text-center">V0.2</h1>
+             <ol class="text-center text-lime-700 text-lg bg-sky-200">
+                 <li>Bug Fixes</li>
+                 <li>Addition of <span class="text-indigo-600">'What's New Tab'</span> </li>
+             </ol>
+        </div>
+    </div>
+    <script>
+      tailwind.config = {
+      theme: {
+      extend: {
+      spacing: {
+      '100': '25rem',
+      '120':'30rem',
+      '140':'35rem'
+    },
+  },
+},
+}</script>
+    </body>
+    </html>
