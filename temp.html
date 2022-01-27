@@ -11,8 +11,7 @@
     <nav>
       <ul class="flex bg-white text-indigo-600 py-7 border drop-shadow-xl">
         <li class="mx-3 cursor-pointer"><a href="/">Home</a> </li>
-        <li class="mx-3 cursor-pointer"><a href="/">About us</a></li>
-      </ul>
+        <li class="mx-3 cursor-pointer"><a href="versions.html">What's New <img src="../Images/update.png" class="w-2 h-2" alt=""></a></li>      </ul>
     </nav>
    <!-- This is for pdf -->
     <div class="justify-center text-center items-center">
@@ -26,12 +25,20 @@
       ></iframe>
     </div>
    <!-- For chapters  -->
-   <div class="justify-center items-center text-center">
-    <h1 class="my-5 font-bold font-serif text-xl">
-      Chapter 1: Food Where Does It Come From
-    </h1>
-    <!-- put iframe here with class mx-auto -->
-  </div>
+   <ol class="text-xl leading-loose bg-white drop-shadow-xl w-72 mx-auto underline decoration-amber-600 decoration-2 font-black">
+    <li class="my-4 vid-li"><a href="https://www.youtube.com/watch?v=5l5vyEpyp_o&t=1s" target="_blank">Chapter 1</a></li>
+  <!-- important -->
+  <style type="text/tailwindcss">
+    .new-ol{
+      @apply text-center text-lime-200 text-lg bg-sky-700 font-serif
+    }
+    .new-h1{ 
+      @apply text-violet-800 font-semibold text-2xl text-center font-mono
+    }
+    .new-li{ 
+      @apply my-2
+    }
+  </style>
     <script>
       tailwind.config = {
       theme: {

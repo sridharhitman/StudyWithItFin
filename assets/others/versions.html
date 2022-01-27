@@ -11,26 +11,45 @@
     <nav>
       <ul class="flex bg-white text-indigo-600 py-7 border drop-shadow-xl">
         <li class="mx-3 cursor-pointer"><a href="../../index.html">Home</a> </li>
-        <li class="mx-3 cursor-pointer"><a href="versions.html">What's New</a></li>
+        <li class="mx-3 cursor-pointer"><a href="versions.html">What's New <img src="../Images/update.png" class="w-2 h-2" alt=""></a></li>
       </ul>
     </nav>
 
     <div class="my-10 bg-white">
         <div>
-            <h1 class="text-violet-700 font-semibold text-2xl text-center">V0.3 Small update</h1>
-             <ol class="text-center text-lime-700 text-lg bg-sky-200">
-                 <li>Description Changes</li>
-                 <li>Added Pdf of Maths</li>
+            <h1 class="new-h1">V0.4 Performance and design update</h1>
+             <ol class="new-ol">
+                 <li class="new-li">Added another section in home page</li>
+                 <li class="new-li">Design Changes in What's New Tab</li>
+                <li class="new-li">Changes to video explanations of chapters to fix performance issues</li>
              </ol>
         </div>
         <div>
-            <h1 class="text-violet-700 font-semibold text-2xl text-center">V0.2</h1>
-             <ol class="text-center text-lime-700 text-lg bg-sky-200">
-                 <li>Bug Fixes</li>
-                 <li>Addition of <span class="text-indigo-600">'What's New Tab'</span> </li>
+            <h1 class="new-h1">V0.3 Small update</h1>
+             <ol class="new-ol">
+                 <li class="new-li">Description Changes</li>
+                 <li class="new-li">Added Pdf of Maths</li>
+             </ol>
+        </div>
+        <div>
+            <h1 class="new-h1">V0.2</h1>
+             <ol class="new-ol">
+                 <li class="new-li">Bug Fixes</li>
+                 <li class="new-li">Addition of 'What's New' Tab </li>
              </ol>
         </div>
     </div>
+    <style type="text/tailwindcss">
+      .new-ol{
+        @apply text-center text-lime-200 text-lg bg-sky-700 font-serif
+      }
+      .new-h1{ 
+        @apply text-violet-800 font-semibold text-2xl text-center font-mono
+      }
+      .new-li{ 
+        @apply my-2
+      }
+    </style>
     <script>
       tailwind.config = {
       theme: {
